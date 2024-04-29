@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="/style/main.css">
 </head>
 <body>
+    <script src="/js/main.js"></script>
     <header>
         <div class="main-container">
         <div class="nav">
             <div class="logo">
-                <a href="">My Portofolio</a>
+                <a href="#home">My Portofolio</a>
             </div>
-            <script src="/js/main.js"></script>
             <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skill</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             </nav>
         </div>
@@ -34,9 +34,9 @@
                 <img src="img/rimuwu.png" alt="fotokita">
             </div>
         </section>
-        <!-- end of home -->
     </div>
     </header>
+        <!-- end of home -->
     <section id="about">
         <div class="main-container">
          <h1 class="section-title-about">About</h1>
@@ -68,6 +68,7 @@
         </div>
         </section>
         <!-- end of about -->
+
         <section id="skills">
             <div class="skill main-container">
                 <h1 class="section-title-skills">Experience & Skills</h1>
@@ -124,5 +125,52 @@
                 </div>
             </div>
         </section>
+        <!-- end skill and experience -->
+
+        <section id="contact">
+            <div class="contact main-container">
+                <div style="text-align: center;">
+                <h1 class="section-title-contact">Contact</h1>
+                <p>I look forward to hearing from you. If you have any questions, project proposals, or would like to discuss anything, please feel free to contact me through the following methods.</p>
+                <br>
+            </div>
+            
+            <form class="contact-form">
+                <div>
+                    <input type="text" name="name" placeholder="Name">
+                </div>
+
+                <div>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+
+                <div>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+
+                <div>
+                    <button class="btn-submit">Send Message</button>
+                </div>
+            </div>
+            </form>
+        </section>
+        <!-- end contact -->
+        
+        <footer>
+            <div class="footer-icon">
+                <a href="https://github.com/GilangLiswiyanaPutra" target="_blank">
+                    <img src="img/github.png" alt="" width="30" height="30" viewbox="0 0 24 24">
+                </a>
+
+                <a href="https://www.instagram.com/gatraaaaa?igsh=ajRrN2tkaHBjZmpw&utm_source=qr" target="_blank">
+                    <img src="img/instagram.png" alt="" width="30" height="30" viewbox="0 0 24 24">
+                </a>
+
+                <a href="https://www.linkedin.com/in/gilang-liswiyana-putra-890197271/" target="_blank">
+                    <img src="img/linkedin.png" alt="" width="30" height="30" viewbox="0 0 24 24">
+                </a>
+            </div>
+            <p>&#169; 2024 ALL Right Reserved</p>
+        </footer>
 </body>
 </html>

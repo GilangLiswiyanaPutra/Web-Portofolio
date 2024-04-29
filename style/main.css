@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -46,8 +47,14 @@ a {
 .nav {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
     transition: 0.2s ease-in-out;
+    position: fixed; 
+    width: 100%;
+    left: 0;
+    z-index: 1000; 
+    padding: 20px 120px;
+    background: #cae8e8;
+    
 }
 
 .nav ul {
@@ -56,16 +63,29 @@ a {
     gap: 3rem;
 }
 
+.nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    font-weight: bold;
+}
+
+.nav a.active,
+.nav a:hover {
+    color: #ffffff; 
+    font-weight: bold; 
+}
+
 .logo {
     display: flex;
     align-items: center;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 2rem;
     margin-left: 2rem;
+    transition: 0.2s ease-in-out;
 }
 
 .logo a {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 nav ul li a {
@@ -82,7 +102,7 @@ nav ul li a {
 .home-name {
     font-size: 3rem;
     font-weight: 700;
-    margin: o.5rem 0 1rem;
+    margin: 0.5rem 0 1rem;
     color: black;
 }
 
@@ -90,7 +110,7 @@ nav ul li a {
     width: 350px;
     border-radius: 0.5rem;
     margin-right: 5rem;
-    margin-top: 5rem;
+    margin-top: 15rem;
 }
 
 .home-right {
@@ -106,6 +126,7 @@ section {
 #about {
     background-color: #cae8e8;
     padding: 6rem 0;
+    margin-top: 15rem;
 }
 
 .section-title-about {
@@ -203,4 +224,78 @@ section {
 .skills-right {
     line-height: 2rem;
     padding: 0 1rem;
+}
+
+#contact {
+    padding: 6rem;
+}
+
+.contact-form div {
+    margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "roboto", "sans-serif";
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: black;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid gray;
+}
+
+.section-title-contact {
+    font-size: 2.5rem;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: #cae8e8;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    font-weight: 600;
+}
+
+.btn-submit:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    margin-bottom: 0;
+    padding: 4rem 0;
+    background-color: #cae8e8;
+    text-align: center;
+}
+
+.footer-icon {
+    margin-bottom: 1rem;
+}
+
+.footer-icon a {
+    margin: 0 0.5rem;
+}
+
+.footer-icon a:hover {
+    fill: black;
+}
+
+.footer-icon {
+    fill: gray;
 }
